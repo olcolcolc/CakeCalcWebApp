@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1f79da5e2c.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./utils.js" defer></script>
+    <script type="module" src="./Cake.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
+
+    <title>Cake calc test</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img id="logo" src="./logo.svg" />
+      <img id="english" src="./english.png" />
+    </header>
+    <main>
+      <!-- WELCOME PAGE -->
+      <div id="welcome-page">
+        <div id="welcome-labels">
+          <h1 id="welcome-label">Cześć!</h1>
+          <h2 id="descprition-label">oblicz cenę i wielkość swojego tortu</h2>
+          <button id="start-btn">Start!</button>
+        </div>
+        <img class="cake-icon" src="./welcome_icon.png" />
+      </div>
+      <!-- ///////////////// -->
+      <!-- INPUTS -->
+      <div class="page">
+        <div id="input-container">
+          <h3>W jakim kształcie ma być tort?</h3>
+          <div class="form-checkbox">
+            <input
+              type="radio"
+              class="form"
+              id="circle"
+              name="radio"
+              value="circle"
+            />
+            <label for="circle" class="form-label"><i class="fa-solid fa-circle"></i></label><br />
+            <input
+              type="radio"
+              class="form"
+              id="square"
+              name="radio"
+              value="square"
+            />
+            <label for="square" class="form-label"><i class="fa-solid fa-square"></i>
+            </label><br />
+            <input
+              type="radio"
+              class="form"
+              id="rectangle"
+              name="radio"
+              value="rectangle"
+            />
+            <label for="rectangle" class="form-label"><i class="fa-solid fa-rectangle-wide"></i></label><br />
+
+          </div>
+          <h3>Na ile osób?</h3>
+            <input type="number" class="input-group" id="portions-count" />
+          <h3>Ustal cenę za osobę:</h3>
+            <input type="number" class="input-group" id="price-per-portion" />
+
+          <h3>Dodatkowe infomacje:</h3>
+          <div class="bonus-info">
+            <input
+              type="checkbox"
+              id="allergies-checkbox"
+              name="allergies-checkbox"
+              value="allergies-checkbox"
+            />
+            <label for="allergies-checkbox">Alergie</label><br />
+            <input
+              type="checkbox"
+              id="box-checkbox"
+              name="box-checkbox"
+              value="box-checkbox"
+            />
+            <label for="box-checkbox">Z pudełkiem</label><br />
+            <input type="checkbox" id="other-checkbox" name="other-checkbox" value="other-checkbox" />
+            <div id="other">
+              <label for="other-input">Inny dodatek:&nbsp&nbsp</label>
+              <input
+                type="number"
+                class="input-group"
+                id="other-input"
+                name="other-input"
+                value="other-input"
+              />
+            </div>
+          </div>
+          <h3>Ustal zaliczkę</h3>
+          <div id="slider">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="advance-slider"
+            />
+          </div>
+          <p><span id="advance-value"></span>%</p>
+          <button id="enter">Enter</button>
+        </div>
+      </div>
+      <!-- //////////////// -->
+      <!-- OUTPUTS -->
+      <div class="page">
+      <div id="output-container">
+        <h2>Twój tort</h2>
+        <h3 class="price-output">Cena:</h3>
+        <div id="price-output"></div>
+        <h3 class="advance-output">Zaliczka:</h3>
+        <div id="advance-output"></div>
+        <h3>Rozmiar</h3>
+        <div class="layers">
+          <h3 class="layer-label">Pierwsza warstwa:</h3>
+          <div class="layer-output" id="first-layer"></div>
+          <br />
+          <h3 class="layer-label" id="second-layer">Druga warstwa:</h3>
+          <div class="layer-output"></div>
+          <br />
+          <h3 class="layer-label" id="third-layer">Trzecia warstwa:</h3>
+          <div class="layer-output"></div>
+          <h4 id="box-price">Cena zawiera cenę pudełka: X </h3>
+        </div>
+        <button id="ones-again-btn">Jeszcze raz</button>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
