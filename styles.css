@@ -190,26 +190,22 @@ h3 {
 }
 
 /* OUTPUTS */
-#price-output,
-.layer-output {
-  border: 1px solid #010101;
-  background-color: white;
-  height: 20px;
-  width: 20px;
-  border: 1px solid black;
-  border-radius: 3px;
-}
 
 .layers{
   justify-content: start;
 }
 
-.layer-output, #advance-output, .layer-label, #price-output, .price-output, #other{
+.layer-output, #advance-output, .layer-label, #other{
   display: inline-flex;
 }
 
-#box-price{
+.box{
   margin-top: 50px;
+  display: none;
+}
+
+.box.visible{
+  display: block;
 }
 
 #ones-again-btn {

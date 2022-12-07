@@ -75,27 +75,23 @@
             <input
               type="checkbox"
               id="allergies-checkbox"
-              name="allergies-checkbox"
-              value="allergies-checkbox"
-            />
+              name="allergies-checkbox"/>
             <label for="allergies-checkbox">Alergie</label><br />
             <input
               type="checkbox"
               id="box-checkbox"
-              name="box-checkbox"
-              value="box-checkbox"
-            />
+              name="box-checkbox"/>
+
             <label for="box-checkbox">Z pudełkiem</label><br />
             <input type="checkbox" id="other-checkbox" name="other-checkbox" value="other-checkbox" />
             <div id="other">
-              <label for="other-input">Inny dodatek:&nbsp&nbsp</label>
+              <label for="other-price">Inny dodatek:&nbsp&nbsp</label>
               <input
                 type="number"
                 class="input-group"
-                id="other-input"
-                name="other-input"
-                value="other-input"
-              />
+                id="other-price"
+                name="other-price"/>
+
             </div>
           </div>
           <h3>Ustal zaliczkę</h3>
@@ -127,12 +123,12 @@
           <h3 class="layer-label">Pierwsza warstwa:</h3>
           <div class="layer-output" id="first-layer"></div>
           <br />
-          <h3 class="layer-label" id="second-layer">Druga warstwa:</h3>
-          <div class="layer-output"></div>
+          <h3 class="layer-label">Druga warstwa:</h3>
+          <div class="layer-output" id="second-layer"></div>
           <br />
-          <h3 class="layer-label" id="third-layer">Trzecia warstwa:</h3>
-          <div class="layer-output"></div>
-          <h4 id="box-price">Cena zawiera cenę pudełka: X </h3>
+          <h3 class="layer-label">Trzecia warstwa:</h3>
+          <div class="layer-output" id="third-layer"></div>
+          <h4 class="box">Cena zawiera cenę pudełka: <div id="box-price"></div></h4>
         </div>
         <button id="ones-again-btn">Jeszcze raz</button>
       </div>

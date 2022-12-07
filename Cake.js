@@ -36,7 +36,6 @@ export class Cake {
   
     priceCalc() {
       let price = this.portionsCount * this.pricePerPerson;
-      let allergies = 0;
       let boxPrice = 0;
       let otherCheckbox = 0;
       let otherPrice = 0;
@@ -65,6 +64,8 @@ export class Cake {
       return [price, boxPrice];
     }
 
+    
+    // SQUARE CALCULATOR METHOS
 
     squareCalc() {
     const layerRatios = this.calculateLayerRatios(this.portionsCount);
@@ -115,7 +116,7 @@ export class Cake {
     }
 
     // ADVANCE PAYMENT CALCULATOR METHOD
-    calculateAdvancePayment(price){
+    advanceValueCalc(price){
       return this.advancePercentage / 100 * price;
     }
 }
