@@ -63,8 +63,8 @@
               value="rectangle"
             />
             <label for="rectangle" class="form-label"><i class="fa-solid fa-rectangle-wide"></i></label><br />
-
           </div>
+
           <h3>Na ile osób?</h3>
             <input type="number" class="input-group" id="portions-count" />
           <h3>Ustal cenę za osobę:</h3>
@@ -113,20 +113,24 @@
       <!-- OUTPUTS -->
       <div class="page">
       <div id="output-container">
-        <h2>Twój tort</h2>
-        <h3 class="price-output">Cena:</h3>
+        <h1>Twój tort</h1>
+
+        <h3 class="price-output-label">Cena:</h3>
         <div id="price-output"></div>
-        <h3 class="advance-output">Zaliczka:</h3>
-        <div id="advance-output"></div>
-        <h3>Rozmiar</h3>
+
+        <h3 class="advance-output" id="advance-output-label">Zaliczka:</h3>
+        <div class="advance-output" id="advance-output"></div>
+
+        <h3 class="size-label">Rozmiar</h3>
+        
         <div class="layers">
-          <h3 class="layer-label">Pierwsza warstwa:</h3>
+          <h3 class="layer-output-label">Pierwsza warstwa:</h3>
           <div class="layer-output" id="first-layer"></div>
           <br />
-          <h3 class="layer-label">Druga warstwa:</h3>
+          <h3 class="layer-output-label">Druga warstwa:</h3>
           <div class="layer-output" id="second-layer"></div>
           <br />
-          <h3 class="layer-label">Trzecia warstwa:</h3>
+          <h3 class="layer-output-label">Trzecia warstwa:</h3>
           <div class="layer-output" id="third-layer"></div>
           <h4 class="box">Cena zawiera cenę pudełka: <div id="box-price"></div></h4>
         </div>
