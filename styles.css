@@ -128,23 +128,50 @@ h3 {
 
 .form-checkbox{
   display: flex;
+  list-style: none;
   justify-content: space-around;
 }
 
-.form{
-  margin-top: -20px;
-  margin-left: -25px;
-  position: relative;
+/* all three forms together*/
+.form-radios{
+  display: inline-block;
   vertical-align: middle;
 }
 
+input[type="radio"]{
+  -webkit-appearance: none;
+}
+
 .form-label{
+  box-sizing: border-box;
   position: relative;
   vertical-align: middle;
-  margin-top: 45px;
+  margin-top: 10px;
   margin-left: -99px;
-  font-size: 30px;
 }
+
+/* icons */
+label>i{
+  font-size: 30px;
+  margin: 10px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: none;
+	color: #34A9D1;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+input[type="radio"]:hover + label {
+  cursor: pointer;
+  color: #34A9D1;
+}
+
+/* RECTANGLE icon*/
+.fa-rectangle-ad{
+  background-color: black;
+}
+
 
 .input-group{
   border: 1px solid rgb(101, 99, 99);
