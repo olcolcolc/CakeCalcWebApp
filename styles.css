@@ -129,7 +129,7 @@ h3 {
 .form-checkbox{
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* all three forms together*/
@@ -174,13 +174,14 @@ input[type="radio"]:hover + label {
 
 
 .input-group{
-  border: 1px solid rgb(101, 99, 99);
-  background-color: white;
-  border-radius: 60px;
-  font-size: 25px;
-  height: 30px;
+  border: 1px solid #f32020c5;
+  background-color: #FEFCFC;
+  border-radius: 30px;
+  font-size: 20px;
+  height: 40px;
+  font-family: 'Nunito';
   text-align: center;
-  width: 209px;
+  width: 200px;
 }
 
 .bonus-info,
@@ -190,10 +191,12 @@ input[type="radio"]:hover + label {
   font-size: 18px;
 }
 
-#other-input{
-  margin-top: -4px;
+#other-price{
+  margin-top: -7px;
   width: 100px;
 }
+
+
 
 #advance-slider{
   cursor: pointer;
@@ -263,6 +266,7 @@ input[type="radio"]:hover + label {
 
 .layer-output, .advance-output, .layer-output-label, #other{
   display: inline-flex;
+  margin-top: 20px;
 }
 
 .layers{
@@ -270,13 +274,27 @@ input[type="radio"]:hover + label {
   text-align: left;
 }
 
+
+.box-container{
+  margin-bottom: -40px;
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+}
+
+
 .box{
-  margin-top: 50px;
   display: none;
 }
 
 .box.visible{
-  display: block;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+#box-price{
+  display: inline-block;
 }
 
 #ones-again-btn {
@@ -293,6 +311,7 @@ input[type="radio"]:hover + label {
   border: 5px solid #34A9D1;
   font-size: 26px;
   top: 90px;
+  margin-top: -200px;
 }
 
 #ones-again-btn:hover{
