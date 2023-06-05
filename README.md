@@ -40,8 +40,4 @@ If you'd like to contribute to the development of this project, follow the steps
 
 If you have any questions or suggestions regarding this project, feel free to contact me at [aleksandra@czyrnek.net]. I appreciate your feedback and input.
 
-## License
-
-This project is licensed under the [MIT License](link_to_license). Please see the LICENSE file for more details.
-
 Thank you for your interest in the Cake Calc App. Happy baking and learning!
